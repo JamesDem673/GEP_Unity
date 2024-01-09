@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using TMPro;
 
 public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
@@ -15,6 +12,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private Color transparent = new Color(1, 1, 1, 0);
 
     private Image thisSlotImage;
+
     public TMP_Text thisSlotQuantityText;
 
     public void initialiseSlot()
@@ -30,7 +28,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         heldItem = item;
 
-        if (item != null )
+        if (item != null)
         {
             thisSlotImage.sprite = heldItem.icon;
             thisSlotImage.color = opaque;
@@ -38,28 +36,23 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         }
         else
         {
-            thisSlotImage.sprite = heldItem.icon;
-            thisSlotImage.color = opaque;
+            thisSlotImage.sprite = null;
+            thisSlotImage.color = transparent;
             updateData();
         }
     }
-
-    public void updateData()
-    {
-        if(heldItem != null) 
-        {
-            thisSlotQuantityText.text = heldItem.currentQuantity.ToString();
-        }
-        else
-        {
-            thisSlotQuantityText.text = "";
-        }
-    }
-
 
     public Item getItem()
     {
         return heldItem;
+    }
+
+    public void updateData()
+    {
+        if (heldItem != null)
+            thisSlotQuantityText.text = heldItem.currentQuantity.ToString();
+        else
+            thisSlotQuantityText.text = "";
     }
 
     public void OnPointerEnter(PointerEventData pointerEventData)
@@ -72,4 +65,3 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         hovered = false;
     }
 }
-
