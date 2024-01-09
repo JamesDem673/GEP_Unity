@@ -8,6 +8,7 @@ public class ExampleItem : MonoBehaviour, IPickupable
 
     public void Pickup()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
 }

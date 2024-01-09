@@ -10,6 +10,8 @@ public class PlayerCharacterInput : MonoBehaviour
     public Vector2 look;
     public bool jump;
     public bool sprint;
+    public bool invOpen;
+    public GameObject inventory;
 
     [Header("Movement Settings")]
     public bool analogMovement;
@@ -17,6 +19,26 @@ public class PlayerCharacterInput : MonoBehaviour
     [Header("Mouse Cursor Settings")]
     public bool cursorLocked = true;
     public bool cursorInputForLook = true;
+
+    public void OnToggleInventory(InputValue value)
+    {
+        if (inventory.activeInHierarchy)
+        {
+            inventory.SetActive(false);
+
+            Cursor.lockState = false ? CursorLockMode.None : CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+        else
+        {
+            inventory.SetActive(true);
+
+            Cursor.lockState = true ? CursorLockMode.None : CursorLockMode.Locked;
+            Cursor.visible = true;
+        }
+
+    }
+
 
     public void OnMove(InputValue value)
     {

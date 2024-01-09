@@ -13,7 +13,10 @@ public class Inventory : MonoBehaviour
 
     public void Start()
     {
-        toggleInventory(false);
+        inventory.SetActive(false);
+
+        Cursor.lockState = false ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = false;
 
         foreach (Slot uiSlot in InventorySlots)
         {
@@ -23,9 +26,14 @@ public class Inventory : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+       
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer == 3)
         {
-            toggleInventory(!inventory.activeInHierarchy);
+            addItemToInventory(collision.gameObject.GetComponent<Item>());
         }
     }
 
@@ -45,6 +53,7 @@ public class Inventory : MonoBehaviour
                 {
                     heltItem.currentQuantity += leftoverQuantity;
                     Destroy(itemToAdd.gameObject);
+                    InventorySlots[i].updateData();
                     return;
                 }
                 else
@@ -59,6 +68,8 @@ public class Inventory : MonoBehaviour
                 {
                     openSlot = InventorySlots[i];
                 }
+
+                InventorySlots[i].updateData();
             }
 
             if (leftoverQuantity > 0 && openSlot)
@@ -72,15 +83,6 @@ public class Inventory : MonoBehaviour
                 itemToAdd.currentQuantity = leftoverQuantity;
             }
         }
-
-    }
-
-    private void toggleInventory(bool enable)
-    {
-        inventory.SetActive(enable);
-
-        Cursor.lockState = enable ? CursorLockMode.None : CursorLockMode.Locked;
-        Cursor.visible = enable;
 
     }
 }

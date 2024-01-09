@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 
 public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -14,10 +15,12 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private Color transparent = new Color(1, 1, 1, 0);
 
     private Image thisSlotImage;
+    public TMP_Text thisSlotQuantityText;
 
     public void initialiseSlot()
     {
         thisSlotImage = gameObject.GetComponent<Image>();
+        thisSlotQuantityText = transform.GetChild(0).GetComponent<TMP_Text>();
         thisSlotImage.sprite = null;
         thisSlotImage.color = transparent;
         setItem(null);
@@ -31,15 +34,30 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         {
             thisSlotImage.sprite = heldItem.icon;
             thisSlotImage.color = opaque;
+            updateData();
         }
         else
         {
             thisSlotImage.sprite = heldItem.icon;
             thisSlotImage.color = opaque;
+            updateData();
         }
     }
 
-    internal Item getItem()
+    public void updateData()
+    {
+        if(heldItem != null) 
+        {
+            thisSlotQuantityText.text = heldItem.currentQuantity.ToString();
+        }
+        else
+        {
+            thisSlotQuantityText.text = "";
+        }
+    }
+
+
+    public Item getItem()
     {
         return heldItem;
     }
