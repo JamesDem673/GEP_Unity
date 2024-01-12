@@ -84,8 +84,8 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
         itemTag.gameObject.SetActive(false);
 
-        thisSlotText = "";
-        thisSlotDesc = "";
+        thisSlotNamePopUp.text = "";
+        thisSlotDescPopUp.text = "";
     }
 }
 
