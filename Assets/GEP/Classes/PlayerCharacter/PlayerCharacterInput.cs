@@ -22,6 +22,7 @@ public class PlayerCharacterInput : MonoBehaviour
 
     public void OnToggleInventory(InputValue value)
     {
+        Debug.Log("Works");
         if (inventory.activeInHierarchy)
         {
             inventory.SetActive(false);

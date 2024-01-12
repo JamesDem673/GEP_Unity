@@ -132,8 +132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43234c20d1556274699cc39e5d12c49e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: RedItem
-  description: Definately wont kill you
+  name: YellowItem
+  description: It's Yellow
   icon: {fileID: 21300000, guid: 5d401e1bf731e8d4cba2579b8a11f0c1, type: 3}
   currentQuantity: 1
   maxQuantity: 16

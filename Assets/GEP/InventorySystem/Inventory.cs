@@ -9,8 +9,6 @@ public class Inventory : MonoBehaviour
     [Header("UI")]
     public GameObject inventory;
     public List<Slot> InventorySlots = new List<Slot>();
-    public Image crosshair;
-    public TMP_Text itemHoverText;
 
     public void Start()
     {
@@ -30,10 +28,9 @@ public class Inventory : MonoBehaviour
 
     private void OnCollisionEnter(UnityEngine.Collision collision)
     {
-        if (collision.gameObject.layer == 3);
+        if (collision.gameObject.layer == 3)
         {
             addItemToInventory(collision.gameObject.GetComponent<Item>());
-            Debug.Log("SkibidiToilet");
         }
     }
 
