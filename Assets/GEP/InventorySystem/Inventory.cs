@@ -22,8 +22,7 @@ public class Inventory : MonoBehaviour
 
     public void Update()
     {  
-        if (Input.GetKeyDown(KeyCode.E))
-            toggleInventory(!inventory.activeInHierarchy);
+
     }
 
     private void OnCollisionEnter(UnityEngine.Collision collision)

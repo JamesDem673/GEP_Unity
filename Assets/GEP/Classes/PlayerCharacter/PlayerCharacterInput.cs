@@ -12,6 +12,7 @@ public class PlayerCharacterInput : MonoBehaviour
     public bool sprint;
     public bool invOpen;
     public GameObject inventory;
+    public GameObject Slots;
 
     [Header("Movement Settings")]
     public bool analogMovement;
@@ -37,6 +38,37 @@ public class PlayerCharacterInput : MonoBehaviour
             Cursor.visible = true;
         }
 
+    }
+
+    private void OnDropOne()
+    {
+        if(inventory.activeInHierarchy) 
+        { 
+            for(int i = 0; i < Slots.transform.childCount; i++) 
+            {
+                Debug.Log(i);
+                if (Slots.transform.GetChild(i).GetComponent<Slot>().returnHovered())
+                {                 
+
+                    Slots.transform.GetChild(i).GetComponent<Slot>().Drop(false);
+                }
+            }
+        }
+    }
+
+    private void OnDropStack()
+    {
+
+        if (inventory.activeInHierarchy)
+        {
+            for (int i = 0; i < Slots.transform.childCount; i++)
+            {
+                if (Slots.transform.GetChild(i).GetComponent<Slot>().returnHovered())
+                {
+                    Slots.transform.GetChild(i).GetComponent<Slot>().Drop(true);
+                }
+            }
+        }
     }
 
 

@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
+using Palmmedia.ReportGenerator.Core.Common;
 
 public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -17,10 +18,16 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private string thisSlotText = "";
     private string thisSlotDesc = "";
 
+    int quantity;
 
     public Canvas itemTag;
     public TMP_Text thisSlotNamePopUp;
     public TMP_Text thisSlotDescPopUp;
+
+    private GameObject ItemPrefab;
+    public GameObject player;
+
+
 
     public void initialiseSlot()
     {
@@ -41,6 +48,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             thisSlotImage.color = opaque;
             thisSlotText = heldItem.name;
             thisSlotDesc = heldItem.description;
+            ItemPrefab = heldItem.prefab;
 
             updateData();
         }
@@ -60,7 +68,10 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void updateData()
     {
         if (heldItem != null)
+        {
             thisSlotQuantityText.text = heldItem.currentQuantity.ToString();
+            quantity = heldItem.currentQuantity;
+        }
         else
             thisSlotQuantityText.text = "";
     }
@@ -86,6 +97,50 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
         thisSlotNamePopUp.text = "";
         thisSlotDescPopUp.text = "";
+    }
+
+    public bool returnHovered()
+    {
+        return hovered;
+    }
+
+    public void Drop(bool all)
+    {
+        if (all)
+        {
+            thisSlotQuantityText.text = "0";
+
+            Vector3 playerPos = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
+
+            for (int i = 0; i < quantity; i++)
+            {
+                GameObject newitem = Instantiate(ItemPrefab, player.transform.position + new Vector3(0 + 1, 1, 0), Quaternion.identity);
+                newitem.SetActive(true);
+                newitem.AddComponent<Rigidbody>();
+            }
+
+            quantity = 0;
+        }
+        else
+        {
+            quantity -= 1;
+
+            GameObject newitem = Instantiate(ItemPrefab, player.transform.position + new Vector3(0 + 1, 1, 0), Quaternion.identity);
+            newitem.SetActive(true);
+            newitem.AddComponent<Rigidbody>();
+
+            thisSlotQuantityText.text = quantity.ToString();
+            
+        }
+
+        if(quantity == 0)
+        {
+            thisSlotImage = gameObject.GetComponent<Image>();
+            thisSlotQuantityText = transform.GetChild(0).GetComponent<TMP_Text>();
+            thisSlotImage.sprite = null;
+            thisSlotImage.color = transparent;
+            setItem(null);
+        }
     }
 }
 

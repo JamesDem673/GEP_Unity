@@ -221,6 +221,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &5854120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,11 +499,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 276364998}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -516,7 +512,7 @@ PrefabInstance:
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.9342488
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
@@ -558,7 +554,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedItem (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7176036592373714491, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -753,6 +755,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &174528273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,6 +856,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &186140874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1221,6 +1225,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &261301587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1342,11 +1347,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2094528574}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: bec459840c61ebe47a64115b6a20a2c9,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 1487733099564353237, guid: bec459840c61ebe47a64115b6a20a2c9,
         type: 3}
       propertyPath: icon
@@ -1418,7 +1418,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowItem (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1607,11 +1608,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1061275190}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 9b46057a373eacb41a2d014ef8a8999b,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 9b46057a373eacb41a2d014ef8a8999b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1728,6 +1724,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &301623913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1928,7 +1925,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -42.181396, y: 0, z: -43.183228, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2181,11 +2178,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 304400126}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 363d6802fccc3964895a2680445b19af,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 363d6802fccc3964895a2680445b19af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2241,7 +2233,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndigoItem
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2332,6 +2325,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &477346026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2566,6 +2560,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &499936528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2687,11 +2682,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1027180516}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 5a20a80ecd2a8954aaa87a09f882934b,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 5a20a80ecd2a8954aaa87a09f882934b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2747,7 +2737,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenItem
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2851,7 +2842,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -35}
+  m_AnchoredPosition: {x: 0, y: -13.9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &550318861
@@ -2937,7 +2928,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -41.87964, y: 0, z: -39.64038, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2959,15 +2950,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 276364998}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5430763
+      value: -0.264
       objectReference: {fileID: 0}
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
@@ -2977,7 +2963,7 @@ PrefabInstance:
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.9342488
+      value: 0.147
       objectReference: {fileID: 0}
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
@@ -3019,7 +3005,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedItem (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7176036592373714491, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3117,7 +3109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &597108666
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3215,11 +3207,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1061275190}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 9b46057a373eacb41a2d014ef8a8999b,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 9b46057a373eacb41a2d014ef8a8999b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3511,6 +3498,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &640486541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3659,11 +3647,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2094528574}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: bec459840c61ebe47a64115b6a20a2c9,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 1487733099564353237, guid: bec459840c61ebe47a64115b6a20a2c9,
         type: 3}
       propertyPath: icon
@@ -3735,7 +3718,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowItem (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3796,6 +3780,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &662583518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3842,11 +3827,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1886910134}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 32da0482bb05a004a85dfcdf33555dc3,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 32da0482bb05a004a85dfcdf33555dc3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3902,7 +3882,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrangeItem
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3915,11 +3896,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1061275190}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 9b46057a373eacb41a2d014ef8a8999b,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 9b46057a373eacb41a2d014ef8a8999b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4117,6 +4093,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &722074451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4211,6 +4188,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &742779916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4263,11 +4241,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1061275190}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 9b46057a373eacb41a2d014ef8a8999b,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 9b46057a373eacb41a2d014ef8a8999b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4336,11 +4309,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1886910134}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 32da0482bb05a004a85dfcdf33555dc3,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 32da0482bb05a004a85dfcdf33555dc3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4396,7 +4364,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrangeItem (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4409,11 +4378,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1061275190}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 9b46057a373eacb41a2d014ef8a8999b,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 9b46057a373eacb41a2d014ef8a8999b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4616,15 +4580,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 276364998}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5430763
+      value: -2.103
       objectReference: {fileID: 0}
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
@@ -4634,7 +4593,7 @@ PrefabInstance:
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.9342488
+      value: 0.291
       objectReference: {fileID: 0}
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
@@ -4676,7 +4635,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedItem
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4701,11 +4661,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 304400126}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 363d6802fccc3964895a2680445b19af,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 363d6802fccc3964895a2680445b19af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4761,7 +4716,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndigoItem (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5191,11 +5147,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1617248384}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 6809b8db7d1f1f443b0924bfc467a761,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 6809b8db7d1f1f443b0924bfc467a761,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5251,7 +5202,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: VioletItem (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5393,6 +5345,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &944131724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5761,11 +5714,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1886910134}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 32da0482bb05a004a85dfcdf33555dc3,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 32da0482bb05a004a85dfcdf33555dc3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5821,7 +5769,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrangeItem (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6094,6 +6043,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &1139274211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6140,11 +6090,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1617248384}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 6809b8db7d1f1f443b0924bfc467a761,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 6809b8db7d1f1f443b0924bfc467a761,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6200,7 +6145,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: VioletItem
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6213,11 +6159,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1617248384}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 6809b8db7d1f1f443b0924bfc467a761,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 6809b8db7d1f1f443b0924bfc467a761,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6273,7 +6214,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: VioletItem (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6334,6 +6276,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &1192104290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6927,6 +6870,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &1321662574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7155,6 +7099,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &1351697231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7201,11 +7146,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1886910134}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 32da0482bb05a004a85dfcdf33555dc3,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 32da0482bb05a004a85dfcdf33555dc3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7261,7 +7201,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrangeItem (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7436,11 +7377,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1027180516}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 5a20a80ecd2a8954aaa87a09f882934b,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 5a20a80ecd2a8954aaa87a09f882934b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7496,7 +7432,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenItem (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7533,6 +7470,7 @@ RectTransform:
   m_Children:
   - {fileID: 314953897}
   - {fileID: 550318860}
+  - {fileID: 1802865147}
   m_Father: {fileID: 597108666}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7586,11 +7524,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2094528574}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: bec459840c61ebe47a64115b6a20a2c9,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 1487733099564353237, guid: bec459840c61ebe47a64115b6a20a2c9,
         type: 3}
       propertyPath: icon
@@ -7662,7 +7595,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowItem
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7675,11 +7609,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1617248384}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 6809b8db7d1f1f443b0924bfc467a761,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 6809b8db7d1f1f443b0924bfc467a761,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7735,7 +7664,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: VioletItem (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7748,11 +7678,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1617248384}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 6809b8db7d1f1f443b0924bfc467a761,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 6809b8db7d1f1f443b0924bfc467a761,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7808,7 +7733,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: VioletItem (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7896,11 +7822,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1027180516}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 5a20a80ecd2a8954aaa87a09f882934b,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 5a20a80ecd2a8954aaa87a09f882934b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7956,7 +7877,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenItem (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8017,6 +7939,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &1460235113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8063,11 +7986,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1027180516}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 5a20a80ecd2a8954aaa87a09f882934b,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 5a20a80ecd2a8954aaa87a09f882934b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8123,7 +8041,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenItem (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8184,6 +8103,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &1462633254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8311,11 +8231,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2094528574}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: bec459840c61ebe47a64115b6a20a2c9,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 1487733099564353237, guid: bec459840c61ebe47a64115b6a20a2c9,
         type: 3}
       propertyPath: icon
@@ -8387,7 +8302,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowItem (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8400,11 +8316,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2094528574}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: bec459840c61ebe47a64115b6a20a2c9,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 1487733099564353237, guid: bec459840c61ebe47a64115b6a20a2c9,
         type: 3}
       propertyPath: icon
@@ -8476,7 +8387,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowItem (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8740,15 +8652,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 276364998}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5430763
+      value: 0.286
       objectReference: {fileID: 0}
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
@@ -8758,7 +8665,7 @@ PrefabInstance:
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.9342488
+      value: 0.068
       objectReference: {fileID: 0}
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
@@ -8800,7 +8707,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedItem (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9373,15 +9281,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 276364998}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5430763
+      value: -0.836
       objectReference: {fileID: 0}
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
@@ -9391,7 +9294,7 @@ PrefabInstance:
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.9342488
+      value: 0.305
       objectReference: {fileID: 0}
     - target: {fileID: 2133399163723418262, guid: 5f5238ffb68eb754ab82fa8914d2e4cc,
         type: 3}
@@ -9433,7 +9336,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedItem (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9446,11 +9350,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1886910134}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 32da0482bb05a004a85dfcdf33555dc3,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 32da0482bb05a004a85dfcdf33555dc3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9506,7 +9405,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrangeItem (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9582,6 +9482,140 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 663320345}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1802865146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1802865147}
+  - component: {fileID: 1802865149}
+  - component: {fileID: 1802865148}
+  m_Layer: 5
+  m_Name: Controls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1802865147
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802865146}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1386542037}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -70.2}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1802865148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802865146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'C: Drop 1    V: Drop Stack'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -45.777405, y: 0, z: -47.63379, w: 24.616577}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1802865149
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802865146}
+  m_CullTransparentMesh: 1
 --- !u!1 &1819849684
 GameObject:
   m_ObjectHideFlags: 0
@@ -9746,7 +9780,7 @@ GameObject:
   - component: {fileID: 1847557843}
   - component: {fileID: 1847557842}
   m_Layer: 5
-  m_Name: Image
+  m_Name: BackgroundInv
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10085,11 +10119,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 304400126}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 363d6802fccc3964895a2680445b19af,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 363d6802fccc3964895a2680445b19af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10145,7 +10174,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndigoItem (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10158,11 +10188,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1027180516}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 5a20a80ecd2a8954aaa87a09f882934b,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 5a20a80ecd2a8954aaa87a09f882934b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10218,7 +10243,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenItem (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10279,6 +10305,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &1882634089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10405,11 +10432,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 304400126}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 363d6802fccc3964895a2680445b19af,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 363d6802fccc3964895a2680445b19af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10465,7 +10487,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndigoItem (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10612,11 +10635,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 304400126}
     m_Modifications:
-    - target: {fileID: 941336558667692397, guid: 363d6802fccc3964895a2680445b19af,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 634473142}
     - target: {fileID: 2133399163723418262, guid: 363d6802fccc3964895a2680445b19af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10672,7 +10690,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndigoItem (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10733,6 +10752,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &2083910657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11003,6 +11023,7 @@ MonoBehaviour:
   itemTag: {fileID: 597108669}
   thisSlotNamePopUp: {fileID: 314953898}
   thisSlotDescPopUp: {fileID: 550318861}
+  player: {fileID: 634473142}
 --- !u!114 &2146182326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11354,6 +11375,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4174508469755562980, guid: 4df9a87682b4e6647adb52038cc94cab,
+        type: 3}
+      propertyPath: Slots
+      value: 
+      objectReference: {fileID: 945662005}
     - target: {fileID: 4174508469755562980, guid: 4df9a87682b4e6647adb52038cc94cab,
         type: 3}
       propertyPath: inventory
