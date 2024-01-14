@@ -10,4 +10,9 @@ public class Item : MonoBehaviour
     public int currentQuantity = 1;
     public int maxQuantity = 16;
     public GameObject prefab;
+
+    public void resetQuantity()
+    {
+        currentQuantity = 1;
+    }
 }

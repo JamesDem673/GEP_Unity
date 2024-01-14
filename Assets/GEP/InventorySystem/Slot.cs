@@ -114,7 +114,8 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
             for (int i = 0; i < quantity; i++)
             {
-                GameObject newitem = Instantiate(ItemPrefab, player.transform.position + new Vector3(0 + 1, 1, 0), Quaternion.identity);
+                GameObject newitem = Instantiate(ItemPrefab, player.transform.position + new Vector3(2, 1 + i / 2, 0), Quaternion.identity);
+                newitem.GetComponent<Item>().resetQuantity();
                 newitem.SetActive(true);
                 newitem.AddComponent<Rigidbody>();
             }
@@ -126,6 +127,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             quantity -= 1;
 
             GameObject newitem = Instantiate(ItemPrefab, player.transform.position + new Vector3(0 + 1, 1, 0), Quaternion.identity);
+            newitem.GetComponent<Item>().resetQuantity();
             newitem.SetActive(true);
             newitem.AddComponent<Rigidbody>();
 
